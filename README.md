@@ -28,7 +28,7 @@ We used these packages/versions in the development of this project. It is likely
 - networkx `2.4` for DAVIS
 - gitpython for training
 - gdown for downloading pretrained models
-- library in file requirement.txt for modun Interaction
+- library in file requirement.txt for modun Interaction to mask
 Refer to the official [PyTorch guide]((<https://pytorch.org/>)) for installing PyTorch/torchvision. The rest can be installed by:
 
 `pip install PyQt5 davisinteractive progressbar2 opencv-python networkx gitpython gdown Cython`
@@ -42,7 +42,6 @@ Refer to the official [PyTorch guide]((<https://pytorch.org/>)) for installing P
 1. `python download_model.py` to get all the required models.
 2. `python interactive_gui.py --video <path to video>` or `python interactive_gui.py --images <path to a folder of images>`. A video has been prepared for you at `examples/example.mp4`.
 3. If you need to label more than one object, additionally specify `--num_objects <number_of_objects>`. See all the argument options with `python interactive_gui.py --help`.
-4. There are instructions in the GUI. You can also watch the [demo videos](https://hkchengrex.github.io/MiVOS/video.html#partb) for some ideas.
 
 ### DAVIS Interactive VOS
 
@@ -50,27 +49,12 @@ See `eval_interactive_davis.py`. If you have downloaded the datasets and pretrai
 
 ### DAVIS/YouTube Semi-supervised VOS
 
-Go to this repo: [Mask-Propagation](https://github.com/hkchengrex/Mask-Propagation).
+Go to this repo: [Mask-Propagation](https://github.com/hkchengrex/STCN).
 
-## Main Results
+### Interactive image
 
-### [DAVIS/YouTube semi-supervised results](https://github.com/hkchengrex/Mask-Propagation/#main-results)
+Go to this repo: [Interactive to mask](https://github.com/saic-vul/ritm_interactive_segmentation).
 
-### DAVIS Interactive Track
-
-All results are generated using the unmodified [official DAVIS interactive bot](https://github.com/albertomontesg/davis-interactive) without saving masks (`--save_mask` not specified) and with an RTX 2080Ti. We follow the [official protocol](https://interactive.davischallenge.org/user_guide/usage/).
-
-Precomputed result, with the json summary: [[Google Drive]](https://drive.google.com/file/d/1WMPCXs5FNAF3dE2Ubg_SYegZaOd1cATM/view?usp=sharing) [[OneDrive]](https://hkustconnect-my.sharepoint.com/:u:/g/personal/hkchengad_connect_ust_hk/EXLxK6VPO7BDodHlos6TDS0BZ7J38pDIhmjit9W5utLXmQ?e=8e06sE)
-
-`eval_interactive_davis.py`
-
-| Model | AUC-J&F | J&F @ 60s |
-| --- |:--:|:---:|
-| Baseline | 86.0 | 86.6 |
-| (+) Top-k | 87.2 | 87.8 |
-| (+) BL30K pretraining | 87.4 | 88.0 |
-| (+) Learnable fusion | 87.6 | 88.2 |
-| (+) Difference-aware fusion (full model) | 87.9 | 88.5 |
 
 ## Pretrained models
 
@@ -82,10 +66,9 @@ Precomputed result, with the json summary: [[Google Drive]](https://drive.google
 
 ### Data preparation
 
-Datasets should be arranged as the following layout. You can use `download_datasets.py` (same as the one Mask-Propagation) to get the DAVIS dataset and manually download and extract fusion_data ([[OneDrive]](https://hkustconnect-my.sharepoint.com/:u:/g/personal/hkchengad_connect_ust_hk/ESGj7FihDUpNjpygP8u1NGkBc-9YFSMFCDDpxKA87aTJ4w?e=SPXheO)) and [BL30K](#bl30k).
+Datasets should be arranged as the following layout. You can use `download_datasets.py` (same as the one Mask-Propagation) to get the DAVIS dataset and manually download and extract fusion_data ([[OneDrive]](https://hkustconnect-my.sharepoint.com/:u:/g/personal/hkchengad_connect_ust_hk/ESGj7FihDUpNjpygP8u1NGkBc-9YFSMFCDDpxKA87aTJ4w?e=SPXheO)).
 
 ```bash
-├── BL30K
 ├── DAVIS
 │   └── 2017
 │       ├── test-dev
@@ -95,32 +78,9 @@ Datasets should be arranged as the following layout. You can use `download_datas
 │           ├── Annotations
 │           └── ...
 ├── fusion_data
-└── MiVOS
+└── FasterMiVOS
 ```
 
-### BL30K
-
-BL30K is a synthetic dataset rendered using Blender with ShapeNet's data. We break the dataset into six segments, each with approximately 5K videos.
-The videos are organized in a similar format as DAVIS and YouTubeVOS, so dataloaders for those datasets can be used directly. Each video is 160 frames long, and each frame has a resolution of 768*512. There are 3-5 objects per video, and each object has a random smooth trajectory -- we tried to optimize the trajectories greedily to minimize object intersection (not guaranteed), with occlusions still possible (happen a lot in reality). See `generation/blender/generate_yaml.py` for details.
-
-We noted that using probably half of the data is sufficient to reach full performance (although we still used all), but using less than one-sixth (5K) is insufficient.
-
-#### Download
-
-You can either use the automatic script `download_bl30k.py` or download it manually below. Note that each segment is about 115GB in size -- 700GB in total. You are going to need ~1TB of free disk space to run the script (including extraction buffer).
-
-Google Drive is much faster in my experience. Your mileage might vary.
-
-Manual download: [[Google Drive]](https://drive.google.com/drive/folders/1KxriFZM8Y_-KbiA3D0PaMv6LQaatKFH-?usp=sharing) [[OneDrive]](https://uillinoisedu-my.sharepoint.com/:f:/g/personal/hokeikc2_illinois_edu/ElEqJXQqaqZAqG8QROa0VesBAw4FiOl5wleP2iq_KXDPyw?e=eKMSbx)
-
-#### Generation
-
-1. Download [ShapeNet](https://www.shapenet.org/).
-2. Install [Blender](https://www.blender.org/). (We used 2.82)
-3. Download a bunch of background and texture images. We used [this repo](https://github.com/hardikvasa/google-images-download) (we specified "non-commercial reuse" in the script) and the list of keywords are provided in generation/blender/*.json.
-4. Generate a list of configuration files (generation/blender/generate_yaml.py).
-5. Run rendering on the configurations. [See here](https://github.com/hkchengrex/BlenderVOSRenderer)
-(Not documented in detail, ask if you have a question)
 
 ### Fusion data
 
@@ -144,15 +104,21 @@ Pre-training on the BL30K dataset: `CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=4 p
 
 Main training: `CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=4 python -m torch.distributed.launch --master_port 7550 --nproc_per_node=2 train.py --load_prop saves/propagation_model.pth --stage 1 --id retrain_s012 --load_network [path_to_trained_s0.pth]`
 
+## Demo
+
+![demo4](img/demo4.gif)
+
 ## Credit
 
-f-BRS: <https://github.com/saic-vul/fbrs_interactive_segmentation>
+RITM: <https://github.com/saic-vul/ritm_interactive_segmentation>
 
 ivs-demo: <https://github.com/seoungwugoh/ivs-demo>
 
 deeplab: <https://github.com/VainF/DeepLabV3Plus-Pytorch>
 
-STM: <https://github.com/seoungwugoh/STM>
+STM: <https://github.com/hkchengrex/STCN>
 
 BlenderProc: <https://github.com/DLR-RM/BlenderProc>
+
+MiVOS: <https://github.com/hkchengrex/MiVOS>
 
