@@ -29,6 +29,7 @@ We used these packages/versions in the development of this project. It is likely
 - gitpython for training
 - gdown for downloading pretrained models
 - library in file requirement.txt for modun Interaction to mask
+
 Refer to the official [PyTorch guide]((<https://pytorch.org/>)) for installing PyTorch/torchvision. The rest can be installed by:
 
 `pip install PyQt5 davisinteractive progressbar2 opencv-python networkx gitpython gdown Cython`
