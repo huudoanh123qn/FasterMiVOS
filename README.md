@@ -34,7 +34,7 @@ Refer to the official [PyTorch guide]((<https://pytorch.org/>)) for installing P
 
 `pip install PyQt5 davisinteractive progressbar2 opencv-python networkx gitpython gdown Cython`
 
-`pip3 install -r requirements.txt`
+`pip install -r requirements.txt`
 
 ## Quick start
 
