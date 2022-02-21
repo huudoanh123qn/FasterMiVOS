@@ -1,0 +1,184 @@
+[A: 0.00, U: 0.00]: Initialized.
+[A: 0.00, U: 0.00]: Timers started.
+[A: 0.09, U: 0.01]: Interaction Click at frame 0.
+[A: 7.39, U: 0.07]: Interaction Click at frame 0.
+[A: 14.35, U: 6.74]: Interaction Click at frame 0.
+[A: 15.90, U: 8.08]: Interaction Click at frame 0.
+[A: 17.20, U: 9.14]: Interaction Click at frame 0.
+[A: 19.32, U: 11.06]: Interaction Click at frame 0.
+[A: 20.53, U: 12.07]: Interaction Click at frame 0.
+[A: 24.78, U: 16.11]: Interaction Click at frame 0.
+[A: 26.01, U: 17.12]: Interaction Click at frame 0.
+[A: 29.39, U: 20.27]: Interaction Click at frame 0.
+[A: 36.28, U: 27.00]: Current object changed to 2!
+[A: 36.64, U: 27.31]: Interaction Click at frame 0.
+[A: 37.52, U: 27.96]: Interaction Click at frame 0.
+[A: 38.87, U: 29.07]: Interaction Click at frame 0.
+[A: 40.69, U: 30.64]: Interaction Click at frame 0.
+[A: 42.93, U: 32.62]: Interaction Click at frame 0.
+[A: 45.15, U: 34.60]: Interaction Click at frame 0.
+[A: 46.26, U: 35.46]: Interaction Click at frame 0.
+[A: 49.21, U: 38.20]: Propagation started.
+[A: 70.36, U: 38.20]: Propagation finished!
+[A: 0.00, U: 0.00]: Initialized.
+[A: 0.00, U: 0.00]: Timers started.
+[A: 0.10, U: 0.05]: Interaction Click at frame 0.
+[A: 9.99, U: 0.73]: Interaction Click at frame 0.
+[A: 10.91, U: 1.43]: Interaction Click at frame 0.
+[A: 13.87, U: 4.17]: Interaction Click at frame 0.
+[A: 15.60, U: 5.67]: Interaction Click at frame 0.
+[A: 16.50, U: 6.36]: Interaction Click at frame 0.
+[A: 17.51, U: 7.16]: Interaction Click at frame 0.
+[A: 19.27, U: 8.71]: Interaction Click at frame 0.
+[A: 20.75, U: 9.99]: Interaction Click at frame 0.
+[A: 22.83, U: 11.85]: Interaction Click at frame 0.
+[A: 26.28, U: 15.10]: Interaction Click at frame 0.
+[A: 0.00, U: 0.00]: Initialized.
+[A: 0.00, U: 0.00]: Timers started.
+[A: 0.10, U: 0.05]: Interaction Click at frame 0.
+[A: 7.98, U: 0.11]: Interaction Click at frame 0.
+[A: 9.71, U: 1.60]: Interaction Click at frame 0.
+[A: 11.48, U: 3.15]: Interaction Click at frame 0.
+[A: 12.90, U: 4.36]: Interaction Click at frame 0.
+[A: 15.86, U: 7.09]: Interaction Click at frame 0.
+[A: 17.88, U: 8.89]: Interaction Click at frame 0.
+[A: 23.36, U: 14.14]: Interaction Click at frame 0.
+[A: 24.74, U: 15.37]: Current object changed to 2!
+[A: 25.91, U: 16.49]: Interaction Click at frame 0.
+[A: 26.87, U: 17.20]: Interaction Click at frame 0.
+[A: 28.32, U: 18.40]: Interaction Click at frame 0.
+[A: 31.50, U: 21.34]: Current object changed to 1!
+[A: 31.80, U: 21.57]: Interaction Click at frame 0.
+[A: 34.20, U: 23.64]: Interaction Click at frame 0.
+[A: 36.35, U: 25.56]: Interaction Click at frame 0.
+[A: 37.80, U: 26.80]: Interaction Click at frame 0.
+[A: 39.15, U: 27.94]: Interaction Click at frame 0.
+[A: 45.18, U: 33.81]: Current object changed to 2!
+[A: 46.15, U: 34.73]: Interaction Click at frame 0.
+[A: 47.63, U: 35.98]: Interaction Click at frame 0.
+[A: 0.00, U: 0.00]: Initialized.
+[A: 0.00, U: 0.00]: Timers started.
+[A: 0.11, U: 0.04]: Interaction Click at frame 0.
+[A: 3.55, U: 1.86]: Interaction Click at frame 0.
+[A: 4.93, U: 3.02]: Interaction Click at frame 0.
+[A: 6.24, U: 4.06]: Interaction Click at frame 0.
+[A: 7.71, U: 5.30]: Interaction Click at frame 0.
+[A: 10.07, U: 7.43]: Interaction Click at frame 0.
+[A: 12.79, U: 9.98]: Current object changed to 2!
+[A: 13.59, U: 10.66]: Interaction Click at frame 0.
+[A: 17.30, U: 14.11]: Interaction Click at frame 0.
+[A: 24.45, U: 20.99]: Interaction Click at frame 0.
+[A: 27.30, U: 23.59]: Interaction Click at frame 0.
+[A: 30.29, U: 26.39]: Propagation started.
+[A: 50.10, U: 26.39]: Propagation finished!
+0.8864128361798195
+[A: 0.00, U: 0.00]: Initialized.
+[A: 0.00, U: 0.00]: Timers started.
+[A: 0.11, U: 0.05]: Interaction Click at frame 0.
+[A: 2.45, U: 0.83]: Interaction Click at frame 0.
+[A: 4.16, U: 2.29]: Interaction Click at frame 0.
+[A: 5.61, U: 3.52]: Interaction Click at frame 0.
+[A: 6.83, U: 4.52]: Interaction Click at frame 0.
+[A: 7.85, U: 5.31]: Interaction Click at frame 0.
+[A: 9.72, U: 6.94]: Interaction Click at frame 0.
+[A: 11.32, U: 8.32]: Interaction Click at frame 0.
+[A: 12.28, U: 9.05]: Interaction Click at frame 0.
+[A: 20.60, U: 17.11]: Interaction Click at frame 0.
+[A: 22.04, U: 18.31]: Interaction Click at frame 0.
+[A: 23.69, U: 19.72]: Interaction Click at frame 0.
+[A: 25.41, U: 21.22]: Interaction Click at frame 0.
+[A: 27.12, U: 22.67]: Interaction Click at frame 0.
+[A: 28.06, U: 23.38]: Interaction Click at frame 0.
+[A: 29.50, U: 24.54]: Interaction Click at frame 0.
+[A: 30.80, U: 25.61]: Interaction Click at frame 0.
+[A: 32.47, U: 27.04]: Interaction Click at frame 0.
+[A: 42.19, U: 36.52]: Interaction Click at frame 0.
+[A: 44.50, U: 38.57]: Interaction Click at frame 0.
+[A: 46.24, U: 40.10]: Interaction Click at frame 0.
+[A: 47.44, U: 41.07]: Interaction Click at frame 0.
+[A: 49.80, U: 43.21]: Interaction Click at frame 0.
+[A: 50.98, U: 44.17]: Interaction Click at frame 0.
+[A: 52.42, U: 45.38]: Interaction Click at frame 0.
+[A: 55.16, U: 47.88]: Interaction Click at frame 0.
+[A: 59.08, U: 51.63]: Current object changed to 2!
+[A: 59.61, U: 52.10]: Interaction Click at frame 0.
+[A: 61.33, U: 53.57]: Interaction Click at frame 0.
+[A: 63.04, U: 55.01]: Interaction Click at frame 0.
+[A: 66.00, U: 57.76]: Propagation started.
+[A: 85.34, U: 57.76]: Propagation finished!
+0.8957501674104084
+[A: 109.25, U: 81.60]: Interaction Click at frame 0.
+[A: 0.00, U: 0.00]: Initialized.
+[A: 0.00, U: 0.00]: Timers started.
+[A: 0.09, U: 0.04]: Interaction Click at frame 0.
+[A: 3.24, U: 1.73]: Interaction Click at frame 0.
+[A: 4.66, U: 2.92]: Interaction Click at frame 0.
+[A: 6.77, U: 4.79]: Interaction Click at frame 0.
+[A: 9.13, U: 6.91]: Interaction Click at frame 0.
+[A: 10.08, U: 7.65]: Interaction Click at frame 0.
+[A: 11.40, U: 8.76]: Interaction Click at frame 0.
+[A: 15.91, U: 13.06]: Interaction Click at frame 0.
+[A: 17.87, U: 14.79]: Interaction Click at frame 0.
+[A: 28.68, U: 25.39]: Interaction Click at frame 0.
+[A: 31.10, U: 27.50]: Interaction Click at frame 0.
+[A: 35.57, U: 31.76]: Interaction Click at frame 0.
+[A: 38.01, U: 33.99]: Interaction Click at frame 0.
+[A: 39.49, U: 35.27]: Interaction Click at frame 0.
+[A: 41.31, U: 36.88]: Interaction Click at frame 0.
+[A: 42.90, U: 38.23]: Interaction Click at frame 0.
+[A: 44.98, U: 40.10]: Interaction Click at frame 0.
+[A: 46.56, U: 41.44]: Interaction Click at frame 0.
+[A: 52.15, U: 46.82]: Interaction Click at frame 0.
+[A: 54.02, U: 48.41]: Interaction Click at frame 0.
+[A: 57.91, U: 52.04]: Interaction Click at frame 0.
+[A: 60.42, U: 54.32]: Interaction Click at frame 0.
+[A: 62.00, U: 55.65]: Interaction Click at frame 0.
+[A: 64.10, U: 57.52]: Interaction Click at frame 0.
+[A: 65.13, U: 58.30]: Interaction Click at frame 0.
+[A: 66.49, U: 59.45]: Interaction Click at frame 0.
+[A: 67.93, U: 60.67]: Interaction Click at frame 0.
+[A: 68.97, U: 61.48]: Interaction Click at frame 0.
+[A: 70.17, U: 62.45]: Interaction Click at frame 0.
+[A: 72.39, U: 64.46]: Interaction Click at frame 0.
+[A: 78.66, U: 70.57]: Current object changed to 2!
+[A: 80.94, U: 72.78]: Interaction Click at frame 0.
+[A: 82.16, U: 73.75]: Interaction Click at frame 0.
+[A: 83.58, U: 74.96]: Interaction Click at frame 0.
+[A: 87.89, U: 79.07]: Current object changed to 1!
+[A: 89.41, U: 80.58]: Propagation started.
+[A: 108.87, U: 80.58]: Propagation finished!
+0.8949181231670256
+[A: 0.00, U: 0.00]: Initialized.
+[A: 0.00, U: 0.00]: Timers started.
+[A: 0.10, U: 0.02]: Interaction Click at frame 0.
+[A: 3.62, U: 2.05]: Interaction Click at frame 0.
+[A: 5.32, U: 3.52]: Interaction Click at frame 0.
+[A: 7.04, U: 4.99]: Interaction Click at frame 0.
+[A: 9.63, U: 7.34]: Interaction Click at frame 0.
+[A: 11.20, U: 8.67]: Interaction Click at frame 0.
+[A: 13.29, U: 10.53]: Interaction Click at frame 0.
+[A: 15.36, U: 12.33]: Interaction Click at frame 0.
+[A: 16.74, U: 13.47]: Interaction Click at frame 0.
+[A: 18.17, U: 14.65]: Interaction Click at frame 0.
+[A: 26.15, U: 22.36]: Interaction Click at frame 0.
+[A: 26.96, U: 22.89]: Interaction Click at frame 0.
+[A: 27.58, U: 23.29]: Interaction Click at frame 0.
+[A: 28.95, U: 24.44]: Interaction Click at frame 0.
+[A: 30.75, U: 26.01]: Interaction Click at frame 0.
+[A: 31.91, U: 26.96]: Interaction Click at frame 0.
+[A: 32.97, U: 27.79]: Interaction Click at frame 0.
+[A: 35.46, U: 30.02]: Interaction Click at frame 0.
+[A: 38.24, U: 32.58]: Interaction Click at frame 0.
+[A: 44.53, U: 38.68]: Current object changed to 2!
+[A: 44.72, U: 38.82]: Interaction Click at frame 0.
+[A: 45.83, U: 39.68]: Interaction Click at frame 0.
+[A: 46.85, U: 40.45]: Interaction Click at frame 0.
+[A: 48.42, U: 41.76]: Interaction Click at frame 0.
+[A: 49.34, U: 42.40]: Interaction Click at frame 0.
+[A: 51.91, U: 44.77]: Propagation started.
+[A: 71.45, U: 44.77]: Propagation finished!
+0.890308703989292
+0.9661882221922421
+0.9688213743795866
+0.9662038368262326
+0.9679482581471279
