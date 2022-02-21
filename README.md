@@ -12,7 +12,7 @@
 
 ## Framework
 
-![framework](img/framework.png)
+![framework](framework.png)
 
 ## Requirements
 
