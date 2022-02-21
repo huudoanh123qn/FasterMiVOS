@@ -107,7 +107,7 @@ Main training: `CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=4 python -m torch.distr
 
 ## Demo
 
-![demo4](img/demo4.gif)
+![demo4](https://imgur.com/edT9rkK)
 
 ## Credit
 
