@@ -1,33 +1,18 @@
-# Modular Interactive Video Object Segmentation: Interaction-to-Mask, Propagation and Difference-Aware Fusion (MiVOS)
+# Interactive-Guided Video Object Segmentation (FasterMiVOS)
 
-[Ho Kei Cheng](https://hkchengrex.github.io/), Yu-Wing Tai, Chi-Keung Tang
+## Member team:
+* **Nguyen Huu Doanh** - *18520606@gm.uit.edu.vn*
+* **Nguyen Huynh Anh** - *18520456@gm.uit.edu.vn*
 
-CVPR 2021
-
-[[arXiv]](https://arxiv.org/abs/2103.07941) [[Paper PDF]](https://arxiv.org/pdf/2103.07941.pdf) [[Project Page]](https://hkchengrex.github.io/MiVOS/) [[Demo]](https://hkchengrex.github.io/MiVOS/video.html#partb) [[Papers with Code]](https://paperswithcode.com/task/interactive-video-object-segmentation)
 
 ![demo1](https://imgur.com/Q1ck2TJ.gif) ![demo2](https://imgur.com/pyrYKCJ.gif) ![demo3](https://imgur.com/K4Qq9iS.gif)
 
 <sub><sup>Credit (left to right): DAVIS 2017, [Academy of Historical Fencing](https://youtu.be/966ulgwEcyc), [Modern History TV](https://youtu.be/e_D1ZQ7Hu0g)</sup></sub>
 
-We manage the project using three different repositories (which are actually in the paper title). This is the main repo, see also [Mask-Propagation](https://github.com/hkchengrex/Mask-Propagation) and [Scribble-to-Mask](https://github.com/hkchengrex/Scribble-to-Mask).
-
-## Overall structure and capabilities
-
-| | [MiVOS](https://github.com/hkchengrex/MiVOS) | [Mask-Propagation](https://github.com/hkchengrex/Mask-Propagation)| [Scribble-to-Mask](https://github.com/hkchengrex/Scribble-to-Mask)  |
-| ------------- |:-------------:|:-----:|:-----:|
-| DAVIS/YouTube semi-supervised evaluation | :x: | :heavy_check_mark: | :x: |
-| DAVIS interactive evaluation | :heavy_check_mark: | :x: | :x: |
-| User interaction GUI tool | :heavy_check_mark: | :x: | :x: |
-| Dense Correspondences | :x: | :heavy_check_mark: | :x: |
-| Train propagation module | :x: | :heavy_check_mark: | :x: |
-| Train S2M (interaction) module | :x: | :x: | :heavy_check_mark: |
-| Train fusion module | :heavy_check_mark: | :x: | :x: |
-| Generate more synthetic data | :heavy_check_mark: | :x: | :x: |
 
 ## Framework
 
-![framework](imgs/framework.jpg)
+![framework](img/framework.jpg)
 
 ## Requirements
 
@@ -43,10 +28,12 @@ We used these packages/versions in the development of this project. It is likely
 - networkx `2.4` for DAVIS
 - gitpython for training
 - gdown for downloading pretrained models
-
+- library in file requirement.txt for modun Interaction
 Refer to the official [PyTorch guide]((<https://pytorch.org/>)) for installing PyTorch/torchvision. The rest can be installed by:
 
 `pip install PyQt5 davisinteractive progressbar2 opencv-python networkx gitpython gdown Cython`
+
+`pip3 install -r requirements.txt`
 
 ## Quick start
 
@@ -169,18 +156,3 @@ STM: <https://github.com/seoungwugoh/STM>
 
 BlenderProc: <https://github.com/DLR-RM/BlenderProc>
 
-## Citation
-
-Please cite our paper if you find this repo useful!
-
-```bibtex
-@inproceedings{MiVOS_2021,
-  title={Modular Interactive Video Object Segmentation: Interaction-to-Mask, Propagation and Difference-Aware Fusion},
-  author={Cheng, Ho Kei and Tai, Yu-Wing and Tang, Chi-Keung},
-  booktitle={CVPR},
-  year={2021}
-}
-```
-
-Contact: <hkchengrex@gmail.com>
-# FasterMiVOS
